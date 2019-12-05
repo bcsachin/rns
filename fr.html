@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+
+    ComplaintBox
+
+ </title>
+ <link rel="stylesheet"href="css/complaintbox1.css">
+ <link rel="stylesheet"href="jui/jquery-ui.css">
+ <link rel="stylesheet"href="jui/jquery-ui.structure.css">
+ <link rel="stylesheet"href="jui/jquery-ui.theme.css">
+
+ <style>
+        body {text-decoration-color: chartreuse;
+            text-align:center;
+    background-image: url("b3.jpg");
+    background-repeat: no-repeat;
+    background-size: 1750px 850px ;
+    
+    
+  }
+  </style>
+ 
+ </head>
+
+    
+<div id="complaints">
+
+  <h1>Any problem!!!!</h1>
+  <br>Dont worry :)
+  <br>
+  <h2>Management is with you  _/\_</h2>
+<br><br>
+
+
+  <h3>please select catagory</h3>
+
+  
+  <form action="fr.php" method="post">
+  <input id="cname" placeholder="name" name="sname" required><br><br>
+  <input id="cusn" placeholder="usn" name="susn" required><br><br>
+      
+    
+      
+      
+  <input id="croom" placeholder="room number" name="sroom" required><br><br>
+
+  <input id="cdate" placeholder="issue date"name="sdate"  required><br><br>
+  <input id="mob" type="number" name="mobile"  placeholder="registered contact" required><br><br>
+ 
+        
+   
+  
+  <br>
+ 
+
+
+
+
+    <!--for complaint room div id  cr-->
+    <div id="cr"> 
+    <select id="scr" name="object" >
+            <option>cot</option>
+            <option>cupboard</option>
+            <option>table</option>
+            <option>chair</option>
+            <option>cleaning</option>
+            <option>window</option>
+            <option>waterleakage</option>
+            <option>roommate</option>
+    </select>
+    <input type="text" id="r1" name="details" placeholder="details of the issue please characters below 150!!!! " maxlength="150" minlength="0">
+
+  </div>
+    <input type="submit" value="submit">
+</form>
+      
+  
+ 
+    </div>
+ 
+ </html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+
+  Room 
+
+ </title>
+ <link rel="stylesheet"href="css/complaintbox1.css">
+ <link rel="stylesheet"href="jui/jquery-ui.css">
+ <link rel="stylesheet"href="jui/jquery-ui.structure.css">
+ <link rel="stylesheet"href="jui/jquery-ui.theme.css">
+
+ <style>
+        body {text-decoration-color: chartreuse;
+           
+    background-image: url("b5.jpg");
+    background-repeat: no-repeat;
+    background-size:1600px 850px ;
+    
+    
+  }
+  </style>
+ 
+ </head>
+ <body>
+     
+     <form action="Room.php" method="post">
+        <div id="roommanage1">
+<h1>Welcome to Room Management</h1>
+<p>select hostel</p>
+<select id="Rh1">
+
+        <option>1</option>
+
+      </select>  
+    <br>
+
+    
+<h2>Add Room</h2>
+<input type="number" placeholder="room number" name="roomnu" min=1>
+<h4>Please select bed to be add</h4>
+<select id="RA1" name="bednu">
+
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+            <br>
+<input type="submit" value="submit">
+    <h2>Delete  Room</h2>
+<input type="number" placeholder="room number" name="roomn" min=1>
+<h4>Please select bed to be remove</h4>
+<select id="RA1" name="bedn">
+
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        
+    </select>
+    <br>
+   <input type="submit" value="submit">
+         </div>   
+
+            </form>
+
+<div id="hello">
+        <input id="hello1" placeholder="enter authorized password">
+        <button id="hellob1" onclick="hello2()">verify</button>
+    </div>
+ </body>
+ <script src="js/j.js"type="text/javascript"></script>
+ <script src="jui/jquery-ui.js"type="text/javascript"></script>
+ <script>
+ $("#roommanage1").fadeOut();
+ 
+ 
+ </script>
+ <script>
+ function hello2()
+ {
+     var k=document.getElementById("hello1").value;
+   if(k=='BCSACHIN')
+   { $("#hello").fadeOut();
+    $("#roommanage1").fadeIn();
+   }
+   else{
+       alert("This Is confidential please Dont try if you are not Authorized member")
+   }
+ }
+ </script>
